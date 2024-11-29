@@ -23,5 +23,5 @@ if st.button("Reset"):
 else:
     st.write(f"Counter is not reset")
 
-
+#here the counetr lacks behind the incrementer by 1 
     

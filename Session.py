@@ -14,7 +14,6 @@ if "counter" not in st.session_state:
     #if counter is in the session
     st.session_state.counter = 0
 # st.session_state.counter = 0
-st.write(f"Counter value: {st.session_state.counter}")
 if st.button("Increment Counter"):
     st.session_state.counter += 1
     st.write(f"Counter increment to {st.session_state.counter}")
@@ -23,5 +22,15 @@ if st.button("Reset"):
 else:
     st.write(f"Counter is not reset")
 
-
+st.write(f"Counter value: {st.session_state.counter}")
     
+# on the first run / on refresh 
+# we set the counter is not in the session state , so we set the counter is 0
+# if the button is presssed 
+# if the counter is in the session state , we do nothing
+# we js set the counter = 0
+# we dont reset it 
+# so now we increment 
+# we write the the line 
+# then we scheck if the reason button is pressed 
+# if its not we write the counter value
