@@ -11,7 +11,7 @@ if st.session_state.step ==1:
     if st.button("Next") :
         st.session_state.info["name"] = name
         st.session_state.step = 2
-        
+       ## buggy fix 
 if st.session_state.step ==2:
     st.header("Part 2 : Review")
     st.subheader("PLease review this")
