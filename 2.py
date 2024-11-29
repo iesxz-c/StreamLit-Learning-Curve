@@ -4,7 +4,7 @@ import pandas as pd
 
 import numpy as np
 import matplotlib.pyplot as plt
-st.title("Streamlit Chart Demo")
+st.title("Streamlit Chart ")
 chart_data= pd.DataFrame(np.random.randn(20,3),columns=['A','B','C'])
 st.subheader("Area Chart")
 st.area_chart(chart_data)
