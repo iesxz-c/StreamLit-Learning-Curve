@@ -1,0 +1,49 @@
+import streamlit as st
+st.write({"key":"value"})
+# write -- is a magic word like if i write smth it autmoatically detects and write 
+# it in a specific format in 
+# st.write({"key":"value"})
+
+
+### Running 
+(venv) PS C:\Users\akash\Music\StreamLit> streamlit run .\main.py
+
+      Welcome to Streamlit!
+
+      If you’d like to receive helpful onboarding emails, news, offers, promotions,
+      and the occasional swag, please enter your email address below. Otherwise,   
+      leave this field blank.
+
+      Email:  
+
+  You can find our privacy policy at https://streamlit.io/privacy-policy       
+
+  Summary:
+  - This open source library collects usage statistics.
+  - We cannot see and do not store information contained inside Streamlit apps,
+    such as text, charts, images, etc.
+  - Telemetry data is stored in servers in the United States.
+  - If you'd like to opt out, add the following to %userprofile%/.streamlit/config.toml,
+    creating that file if necessary:
+
+    [browser]
+    gatherUsageStats = false
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.8:8501
+
+C:\Users\akash\Music\StreamLit\main.py:2: SyntaxWarning: invalid escape sequence '\{'
+  st.write("Helloworld")
+
+
+  4+7
+"hello" if True else "bye"
+# write commands are stereamlit magic
+
+rerun the entire file if any chnges happen
+# streamlit run .\main.py
+
+#data flow in streamlit
