@@ -9,6 +9,9 @@ def go_to_step2(name):
     st.session_state.info["name"] = name
     st.session_state.step = 2
 
+def go_back():
+    st.session_state.step = 1
+
 if st.session_state.step ==1:
     st.header("Part 1 : Info")
     name = st.text_input("Name", value=st.session_state.info.get("name",""))
@@ -27,6 +30,6 @@ if st.session_state.step ==2:
         st.success("Great")
         st.balloons()
         st.session_state.info ={}
-    if st.button("Back"):
-        st.session_state.step =1
+    
+    st.button("Back",on_click=go_back)
         
